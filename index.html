@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="navbar p-0 m-0 navbar-expand-sm navbar-light bg-dark text-white">
+            <div class="container py-2">
+              <div class="logooo d-flex justify-content-between align-items-center">
+                <img class="logo" src="images/logo2x.png" alt="LOGO">
+              <div class="ms-3 my-2">
+                <p class="navbar-brand text-white pb-0 mb-0 fw-bolder" href="#">Weather</p>
+                <small class="fw-light">tagline goes here</small></a>
+              </div>
+              </div>
+              <button class="navbar-toggler bg-info rounded d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse text-center  navbar-collapse" id="collapsibleNavId">
+                  <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link text-white activeNav px-2 my-1" href="#" aria-current="page">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class= "nav-link text-white px-2 my-1 "  href="#">News</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class= "nav-link text-white px-2 my-1"  href="#">Live Camera</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class= "nav-link text-white px-2 my-1"  href="#">Photo</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class= "nav-link text-white px-2 my-1"  href="#">Contact</a>
+                      </li>
+                      
+                  </ul>
+                  
+              </div>
+        </div>
+        </nav>
+
+
+
+
+    <div class="img-side">
+          <div class="container">
+              <div class="row">
+                  <form class="position-relative">
+                    <input type="text" placeholder="Find your location..." id="search">
+                    <input type="button" value="Find" id="submit">
+                  </form>
+              </div>
+          </div>
+        </div>
+
+    <div class="forecast-table text-center rounded">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-4">
+                        <div class="box">
+                            <div class="forecast today">
+                                <div class="forecast-header d-flex justify-content-between text-start">
+                                    <div id="today_name_day" class="day">Sunday</div>
+                                    <div id="today_name_months" class="date">August</div>
+                                </div>
+                                <div class="forecast-content">
+                                    <div id="today_name_location" class="location">Cairo</div>
+                                    <div class="degree mx-2 d-flex justify-content-around align-items-center">
+                                        <div id="today_num_temp" class="num text-white">24.6</div>
+                                        <div class="text-white"><sup>o</sup>C</div>
+                                            <img class="w-100" id="today_condition_img" src="imgs/116.png" alt="">
+                                    </div>
+                                    <div id="text_temp" class="custom">Clear</div>
+                                    <img  src="imgs/icon-umberella.png" alt="">
+                                    <span id="umbrella">20%</span>
+                                    <img  src="imgs/icon-wind.png" alt="">
+                                    <span id="wind">18km/h</span>
+                                    <img  src="imgs/icon-compass.png" alt="">
+                                    <span id="wind_dir">East</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="nextDay day">Sunday</div>
+                            </div>
+                            <div class="forecast-content">
+                                <div class="icon-forcast">
+                                    <img class="tomorrow_condition_img" src="" alt="">
+                                </div>
+                                
+                                <div class="degreeSmall d-flex justify-content-center">
+                                    <div  class="nextDay_temp num next_max_temp d-flex justify-content-center"></div>
+                                    <div class="text-white"><sup class="ms-2">o</sup>C</div>
+                                </div>
+                                <div class="smallsub d-flex justify-content-center">
+                                    <div class="small_temp_nextDay">30</div>
+                                    <div><sup class="ms-2">o</sup>C</div>
+                                </div>
+                                <div class="custom nextDay_condition"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="nextDay day">Sunday</div>
+                            </div>
+                            <div class="forecast-content">
+                                <div class="icon-forcast">
+                                    <img  class="tomorrow_condition_img" src="" alt="">
+                                </div>
+                                <div class="degreeSmall d-flex justify-content-center">
+                                    <div  class="nextDay_temp num next_max_temp d-flex justify-content-center"></div>
+                                    <div class="text-white"><sup class="ms-2">o</sup>C</div>
+                                </div>
+                                <div class="smallsub d-flex justify-content-center">
+                                    <div class="small_temp_nextDay">30</div>
+                                    <div><sup class="ms-2">o</sup>C</div>
+                                </div>
+                                <div class="custom nextDay_condition"></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-side">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form>
+                        <input type="text" placeholder="Enter your email...">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="social-links">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
